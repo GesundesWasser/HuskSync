@@ -8,7 +8,7 @@ pipeline {
         }
         stage('Archive') {
             steps {
-                archiveArtifacts artifacts: 'target/*.jar', fingerprint: true
+                archiveArtifacts artifacts: 'bukkit/build/libs/*.jar', fingerprint: true
             }
         }
     }
